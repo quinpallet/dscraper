@@ -78,7 +78,7 @@ class DyScrape:
         logger.info('FETCH: SUCCESSED')
 
     # 動的ページの走査
-    def dynamic_fetch(self, selector=None, dselector=None):
+    def dynamic_fetch(self, selector: str = None, dselector: str = None) -> None:
         logger.info(f'Dynamic Selector: {dselector}')
 
         # ユーザーエージェント取得
